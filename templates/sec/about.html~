@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Secccc</title>
+    <body>
+        <h1>About sec...</h1>
+        Walla! <strong>{{ boldmessage }}</strong><br />
+	<p/>
+        <a href="/sec/about/">About</a><br />
+	<h1>Including Static Media</h1>
+        <img src="{% static "rango.jpg" %}" alt="Picture of Rango" /> <!-- Images -->
+    </body>
+
+</html>

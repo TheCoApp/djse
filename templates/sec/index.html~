@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Secccc</title>
+    </head>
+
+    <body>
+        <h1>Sec says...</h1>
+        Ahalan Olam! <strong>{{ boldmessage }}</strong><br />
+	<p/>
+        <a href="/sec/about/">About</a><br />
+        <img src="/static/rango.jpg" alt="Picture of Rango" /> <!-- New line -->
+    </body>
+
+</html>
