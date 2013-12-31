@@ -1,5 +1,5 @@
 from django.contrib import admin
-from thr.models import Category, Page, Stam
+from thr.models import Category, Page
 
 # Register your models here.
 

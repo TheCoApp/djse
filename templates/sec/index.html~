@@ -1,16 +1,42 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 
     <head>
         <title>Secccc</title>
+<!--	<link rel="stylesheet" href="{% static "css/base.css" %}" /> <!-- CSS -->
+<!--        <script src="{% static "js/jquery.js" %}"></script> <!-- JavaScript -->
     </head>
 
     <body>
         <h1>Sec says...</h1>
-        Ahalan Olam! <strong>{{ boldmessage }}</strong><br />
+	{% if categories %}
+		<ul>
+       			{% for category in categories %}
+       		        <li>{{ category.namme }}</li>
+			<li><a href="/sec/category/{{ category.url }}">{{ category.namme }}</a></li>
+        	        {% endfor %}
+        	</ul>
+        {% else %}
+            <strong>There are no categories present.</strong>
+        {% endif %}
+ <h2>ועכשיו חמישה עמודים</h2
+	{% if pages %}
+		<ul>
+       			{% for page in pages %}
+       		        <li>{{ page.title }}</li>
+        	        {% endfor %}
+        	</ul>
+        {% else %}
+            <strong>There are no pages present.</strong>
+        {% endif %}
+
+        <!-- Ahalan Olam! <strong>{{ boldmessage }}</strong><br />-->
 	<p/>
         <a href="/sec/about/">About</a><br />
-        <img src="/static/rango.jpg" alt="Picture of Rango" /> <!-- New line -->
+	<h1>Including Static Media</h1>
+        <img src="{% static "rango.jpg" %}" alt="Picture of Rango" /> <!-- Images -->
+        <img src="{% static "rango.jpg" %} alt="Picture of Rango" /> <!-- New line -->
     </body>
 
 </html>
