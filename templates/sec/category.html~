@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>secc categ</title>
+    </head>
+
+    <body>
+        <h1>{{ category_namme }}</h1>
+	<a href="/sec/category/(?P<category_namme_url>\w+)/add_page/">add pages</a>
+	</a>
+        {% if category %}
+            {% if pages %}
+            <ul>
+                {% for page in pages %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+                <strong>  צטערת No pages currently in category.</strong>
+            {% endif %}
+        {% else %}
+            The specified category {{ category_namme }} does not exist!
+	<strong> מה נסגר איתך? </strong>
+        {% endif %}
+    </body>
+</html>
+

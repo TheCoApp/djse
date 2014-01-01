@@ -4,7 +4,7 @@ settings_dir = os.path.dirname(__file__)
 
 PROJECT_PATH = os.path.join(settings_dir, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
-DATABASE_PATH = os.path.join(PROJECT_PATH, 'djse.db')
+DATABASE_PATH = os.path.join(PROJECT_PATH, 'sec.db')
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
